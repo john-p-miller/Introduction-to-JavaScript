@@ -1,23 +1,43 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
+var votingAge=18;
+if ( 36>votingAge){
+    console.log ( "true");
 
+}
+else{
+    console.log ("false");
+}
 
 
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
-
+var pizza="cheese";
+var soda="pepsi";
+if ( soda==="pepsi")
+{
+    pizza="sausage";
+}
 
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
+var yearString="1999";
+var year=parseInt(yearString)
+
 
 
 
 
 
 //Task d: Write a function to multiply a*b 
+function mult(a,b){
+    var r= a*b;
+    return r;
+
+}
 
 
 
@@ -26,6 +46,10 @@
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
+funtion dogYears(humanyears){
+    var r=humanyears*7;
+    return r;
+}
 
 
 
@@ -48,7 +72,50 @@
 // 7 - 12 months 4% of their body weight
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
-  
+function dogFeeder(weight,age){
+    if(age>=1){
+        if(weight<5){
+            var food=weight*.05;
+            return food;
+        }
+        else if(weight<10){
+            var food=weight*.04;
+            return food;
+
+        }
+        else if(weight<15){
+            var food=weight*.03;
+            return food;
+
+        } 
+        else {
+            var food=weight*.02;
+            return food;
+
+
+        }
+    }
+    else{
+        if(age<.333){ //.333=4months
+            var food=weight*.10;
+            return food;
+        }
+        else if(age<.583){//.583=7 months
+            var food=weight*.05;
+            return food;
+
+        }
+        
+        else {
+            var food=weight*.04;
+            return food;
+
+
+        }
+    }
+
+}
+
 
 
 

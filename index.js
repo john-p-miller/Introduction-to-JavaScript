@@ -190,7 +190,13 @@ function feetToCm (feet){
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
+function annoyingSong (numberOfBottles){
 
+    for(let i=numberOfBottles;i>0;i--){
+        console.log(`${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i-1} bottles of soda on the wall`);
+    }
+
+}
 
 
 
@@ -202,6 +208,27 @@ function feetToCm (feet){
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
+function gradeCalulator (mark) {
+    if( mark>=90){
+        return "A";
+
+    }
+    else if(mark>=80){
+        return "B";
+    }
+    else if(mark>=70){
+        return "c";
+    }
+    else if(mark>=60){
+        return "D";
+    }
+    else {
+        return "F";
+    }
+   
+
+}
+
   
 
   

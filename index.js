@@ -127,20 +127,61 @@ function dogFeeder(weight,age){
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
-  
+  function game(userChoice){
+      var computerChoice;
+      computerChoice=Math.floor(Math.random()*3);
+      //0=rock 1=paper 2=scissors
+      if(computerChoice===0){
+          if(userChoice==="rock"){
+              return "Draw";
+          }
+          else if(userChoice==="paper"){
+            return "user won"
+          }else if (userChoice==="scissors"){
+              return "user lose"
+          }
+    
+      }else if(computerChoice===1){
+        if(userChoice==="rock"){
+            return "user loss";
+        }
+        else if(userChoice==="paper"){
+          return "draw";
+        }else if (userChoice==="scissors"){
+            return "user win";
+        }
+        
+          
+      }
+      else if(computerChoice===2){
+        if(userChoice==="rock"){
+            return "user wins";
+        }
+        else if(userChoice==="paper"){
+          return "user loss";
+        }else if (userChoice==="scissors"){
+            return "draw";
+        }
 
+      }
+  }
+
+  
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-
+function kmToMiles(km){
+    return 0.621371*km;
+}
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
-
+function feetToCm (feet){
+    return 30.48*feet;
+}
 
 
 
